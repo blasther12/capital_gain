@@ -115,10 +115,10 @@ def main():
         if not line:
             break
         operations = json.loads(line)
-        logging.info(f"Entrada: {operations}")
+        logging.info(f"Input: {operations}")
         operations_validated =  [Operation.model_validate(op) for op in operations]
         impostos = process_operations(operations_validated)
-        logging.info(f"Saida: {[op.model_dump() for op in impostos]}")
+        logging.info(f"Output: {[op.model_dump() for op in impostos]}")
 
 
 if __name__ == "__main__":

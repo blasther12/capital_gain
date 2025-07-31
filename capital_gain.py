@@ -116,8 +116,10 @@ def main():
             break
         operations = json.loads(line)
         logging.info(f"Input: {operations}")
+        
         operations_validated =  [Operation.model_validate(op) for op in operations]
         impostos = process_operations(operations_validated)
+        
         logging.info(f"Output: {[op.model_dump() for op in impostos]}")
 
 

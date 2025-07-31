@@ -12,9 +12,6 @@ O cálculo contínuo do preço médio é feito com base nas compras, garantindo 
 #### Impostos
 A tributação é aplicada de forma condicional. Perdas acumuladas são compensadas com lucros futuros, seguindo regras fiscais comuns para ganhos de capital, com um imposto de 20% sobre o lucro ajustado.
 
-#### Controle de Estoque
-O controle de estoque é realizado ajustando o total de itens após cada venda, garantindo que o estoque não seja negativo e que as transações de venda sejam consistentes.
-
 #### Estruturas de Dados
 O uso de modelos Operation e OperationTax organiza os dados relacionados às operações e aos impostos, facilitando a manipulação dos dados e a extensão do código conforme novas operações ou regras fiscais são adicionadas.
 
